@@ -9,7 +9,7 @@ Developed by **xianwei zhang**. Independent integration; not built, endorsed or 
 
 Requires macOS, Claude Desktop (Code tab), Logi Options+ with plugin support, and MX Master 4 for Mac.
 
-1. Download the latest `ClaudeActionRing_<version>.lplug4` from Releases and open it to install.
+1. Download [ClaudeActionRing_0_1_0.lplug4](ClaudeActionRingPlugin/artifacts/ClaudeActionRing_0_1_0.lplug4) using GitHub's download button and open it to install.
 2. In Options+, select Claude Action Ring and assign the eight actions to the eight ring slots.
 3. Keep Claude Desktop frontmost with the Code tab active. The actions send Claude's own documented Code-tab shortcuts, so they do nothing useful on the Chat or Cowork tabs.
 
@@ -24,7 +24,7 @@ Requires macOS, Claude Desktop (Code tab), Logi Options+ with plugin support, an
 | View Mode | Control–O |
 | Next Session | Control–Tab |
 
-Shortcut availability depends on your Claude Desktop version; the mapping follows the [Code tab keyboard shortcuts](https://code.claude.com/docs/en/desktop#keyboard-shortcuts) reference.
+Toggle Terminal is sent as the SDK key `Oem102`, which the Logi Plugin Service maps to the physical ` key on ANSI keyboards. Shortcut availability depends on your Claude Desktop version; the mapping follows the [Code tab keyboard shortcuts](https://code.claude.com/docs/en/desktop#keyboard-shortcuts) reference.
 
 ## Build and test
 
@@ -37,7 +37,7 @@ python3 -m unittest discover -s ClaudeActionRingPlugin/tests/IconSystem -v
 ```
 
 Run each .NET test project under `ClaudeActionRingPlugin/tests/` with `dotnet test <project.csproj>`.
-See [icons](ClaudeActionRingPlugin/tools/icons/README.md), [packaging](ClaudeActionRingPlugin/tools/package/README.md) and [validation](ClaudeActionRingPlugin/tools/validate/README.md) for the icon pipeline and the official LogiPluginTool workflow. Release versions are immutable; choose a new version when preparing a new package.
+See [icons](ClaudeActionRingPlugin/tools/icons/README.md), [packaging](ClaudeActionRingPlugin/tools/package/README.md) and [validation](ClaudeActionRingPlugin/tools/validate/README.md) for the icon pipeline and the official LogiPluginTool workflow. Release versions are immutable; choose a new version when preparing a new package. The checked-in 0.1.0 package is the exact artifact produced by `package_release.py` and verified by LogiPluginTool 6.1.4.22672.
 
 ## Privacy and support
 
