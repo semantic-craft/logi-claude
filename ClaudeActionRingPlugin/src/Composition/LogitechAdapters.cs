@@ -25,6 +25,10 @@ namespace Loupedeck.ClaudeActionRingPlugin.Composition
             return LocalDispatchOutcome.Accepted;
         }
 
+        // The plugin service translates Windows virtual keys through PC scan codes
+        // into macOS key codes. In that table Oem3 (PC scan 0x29) lands on the ISO
+        // section key (kVK_ISO_Section, 10), which ANSI keyboards do not have, while
+        // Oem102 (PC scan 0x56) lands on kVK_ANSI_Grave (50), the physical ` key.
         private static VirtualKeyCode MapKey(DesktopKey key) => key switch
         {
             DesktopKey.M => VirtualKeyCode.KeyM,
@@ -32,7 +36,7 @@ namespace Loupedeck.ClaudeActionRingPlugin.Composition
             DesktopKey.E => VirtualKeyCode.KeyE,
             DesktopKey.Semicolon => VirtualKeyCode.Oem1,
             DesktopKey.D => VirtualKeyCode.KeyD,
-            DesktopKey.Grave => VirtualKeyCode.Oem3,
+            DesktopKey.Grave => VirtualKeyCode.Oem102,
             DesktopKey.O => VirtualKeyCode.KeyO,
             DesktopKey.Tab => VirtualKeyCode.Tab,
             _ => throw new ArgumentOutOfRangeException(nameof(key), key, "Unsupported shortcut key."),

@@ -51,6 +51,7 @@ namespace Loupedeck.ClaudeActionRingPlugin.Integration.Tests
                 Assert.Equal(LocalDispatchOutcome.Accepted, adapter.Dispatch(desktop.Shortcut));
             }
 
+            // Oem102, not Oem3: see LogitechShortcutDispatcher.MapKey.
             Assert.Equal(
                 new[]
                 {
@@ -59,7 +60,7 @@ namespace Loupedeck.ClaudeActionRingPlugin.Integration.Tests
                     (VirtualKeyCode.KeyE, ModifierKey.Command | ModifierKey.Shift),
                     (VirtualKeyCode.Oem1, ModifierKey.Command),
                     (VirtualKeyCode.KeyD, ModifierKey.Command | ModifierKey.Shift),
-                    (VirtualKeyCode.Oem3, ModifierKey.Ctrl),
+                    (VirtualKeyCode.Oem102, ModifierKey.Ctrl),
                     (VirtualKeyCode.KeyO, ModifierKey.Ctrl),
                     (VirtualKeyCode.Tab, ModifierKey.Ctrl),
                 },
