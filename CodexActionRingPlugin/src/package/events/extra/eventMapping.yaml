@@ -1,0 +1,7 @@
+haptics:
+  DispatchRequested:
+    DEFAULT: sharp_state_change
+  DispatchFailed:
+    DEFAULT: knock
+  SelectionRejected:
+    DEFAULT: subtle_collision

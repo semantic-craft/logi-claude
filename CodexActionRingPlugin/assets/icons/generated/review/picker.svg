@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="390" viewBox="0 0 1600 390">
+<rect width="1600" height="390" fill="#F5F4F0"/>
+<text x="40" y="47" fill="#17191A" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="24" font-weight="700">Picker symbols · transparent single-black · 46 px glyph</text>
+<rect x="57" y="75" width="122" height="92" rx="14" fill="#FFFFFF" stroke="#D7D2C8"/>
+<g transform="translate(95 88) scale(0.71875)" fill="none" stroke="#000000" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" opacity="1"><path d="M32 9v28m0 0-9-9m9 9 9-9"/>
+  <circle cx="32" cy="49" r="5"/></g>
+<text x="118" y="194" fill="#36393B" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="650">Next Attention</text>
+<rect x="254" y="75" width="122" height="92" rx="14" fill="#FFFFFF" stroke="#D7D2C8"/>
+<g transform="translate(292 88) scale(0.71875)" fill="none" stroke="#000000" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" opacity="1"><path d="M25 18h25M25 32h25M25 46h25"/><circle cx="14" cy="18" r="2"/><circle cx="14" cy="32" r="2"/><circle cx="14" cy="46" r="2"/></g>
+<text x="315" y="194" fill="#36393B" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="650">View Activity</text>
+<rect x="451" y="75" width="122" height="92" rx="14" fill="#FFFFFF" stroke="#D7D2C8"/>
+<g transform="translate(489 88) scale(0.71875)" fill="none" stroke="#000000" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" opacity="1"><rect x="13" y="13" width="38" height="38" rx="11"/>
+  <path d="M32 22v20M22 32h20"/></g>
+<text x="512" y="194" fill="#36393B" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="650">New Chat</text>
+<rect x="648" y="75" width="122" height="92" rx="14" fill="#FFFFFF" stroke="#D7D2C8"/>
+<g transform="translate(686 88) scale(0.71875)" fill="none" stroke="#000000" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" opacity="1"><path d="M14 13h36v30H29L14 52V13Z"/><path d="m34 18-10 14h8l-3 10 13-17h-9l1-7Z"/></g>
+<text x="709" y="194" fill="#36393B" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="650">Quick Chat</text>
+<rect x="845" y="75" width="122" height="92" rx="14" fill="#FFFFFF" stroke="#D7D2C8"/>
+<g transform="translate(883 88) scale(0.71875)" fill="none" stroke="#000000" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" opacity="1"><rect x="10" y="12" width="44" height="40" rx="6"/><path d="M35 12v40M17 22h11M17 31h11M42 23h5M42 32h5"/></g>
+<text x="906" y="194" fill="#36393B" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="650">Side Chat</text>
+<rect x="1042" y="75" width="122" height="92" rx="14" fill="#FFFFFF" stroke="#D7D2C8"/>
+<g transform="translate(1080 88) scale(0.71875)" fill="none" stroke="#000000" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" opacity="1"><circle cx="25" cy="27" r="16"/><path d="M25 17v11l7 4M45 20h9M46 31h8M39 43h15M16 53h38"/></g>
+<text x="1103" y="194" fill="#36393B" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="650">Recently Viewed</text>
+<rect x="1239" y="75" width="122" height="92" rx="14" fill="#FFFFFF" stroke="#D7D2C8"/>
+<g transform="translate(1277 88) scale(0.71875)" fill="none" stroke="#000000" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" opacity="1"><path d="m26 22 8-8a12 12 0 0 1 17 17l-8 8M38 42l-8 8a12 12 0 0 1-17-17l8-8M23 41l18-18"/></g>
+<text x="1300" y="194" fill="#36393B" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="650">Copy Deep Link</text>
+<rect x="1436" y="75" width="122" height="92" rx="14" fill="#FFFFFF" stroke="#D7D2C8"/>
+<g transform="translate(1474 88) scale(0.71875)" fill="none" stroke="#000000" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" opacity="1"><rect x="24" y="9" width="16" height="31" rx="8"/>
+  <path d="M17 32a15 15 0 0 0 30 0M32 47v8M24 55h16"/></g>
+<text x="1497" y="194" fill="#36393B" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="650">Start Dictation</text>
+</svg>

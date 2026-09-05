@@ -1,0 +1,61 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34408.163
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodexActionRingPlugin", "src\CodexActionRingPlugin.csproj", "{639FFC8C-00AA-489C-B245-282A21F3FD17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Tests", "tests\Core\Core.Tests.csproj", "{A6CF1E68-2268-48DC-8A80-0A4C198CC2E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesktopBridge.Tests", "tests\DesktopBridge\DesktopBridge.Tests.csproj", "{F89342D5-BE3E-4368-B204-8F49536B2B46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Feedback.Tests", "tests\Feedback\Feedback.Tests.csproj", "{E1406125-1196-4BEC-AAC3-0550F1026C28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogitechPrimary.Tests", "tests\LogitechPrimary\LogitechPrimary.Tests.csproj", "{79E4E795-C844-49BF-B577-E9E8F451D398}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Integration.Tests", "tests\Integration\Integration.Tests.csproj", "{24B864C6-1315-47C0-B962-8F240E84903E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BD08438B-1C4A-4FFA-A856-D5285D570BB8}"
+	ProjectSection(SolutionItems) = preProject
+		.vscode\launch.json = .vscode\launch.json
+		.vscode\tasks.json = .vscode\tasks.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{639FFC8C-00AA-489C-B245-282A21F3FD17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{639FFC8C-00AA-489C-B245-282A21F3FD17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{639FFC8C-00AA-489C-B245-282A21F3FD17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{639FFC8C-00AA-489C-B245-282A21F3FD17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6CF1E68-2268-48DC-8A80-0A4C198CC2E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6CF1E68-2268-48DC-8A80-0A4C198CC2E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6CF1E68-2268-48DC-8A80-0A4C198CC2E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6CF1E68-2268-48DC-8A80-0A4C198CC2E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F89342D5-BE3E-4368-B204-8F49536B2B46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F89342D5-BE3E-4368-B204-8F49536B2B46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F89342D5-BE3E-4368-B204-8F49536B2B46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F89342D5-BE3E-4368-B204-8F49536B2B46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1406125-1196-4BEC-AAC3-0550F1026C28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1406125-1196-4BEC-AAC3-0550F1026C28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1406125-1196-4BEC-AAC3-0550F1026C28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1406125-1196-4BEC-AAC3-0550F1026C28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79E4E795-C844-49BF-B577-E9E8F451D398}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79E4E795-C844-49BF-B577-E9E8F451D398}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79E4E795-C844-49BF-B577-E9E8F451D398}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79E4E795-C844-49BF-B577-E9E8F451D398}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24B864C6-1315-47C0-B962-8F240E84903E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24B864C6-1315-47C0-B962-8F240E84903E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24B864C6-1315-47C0-B962-8F240E84903E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24B864C6-1315-47C0-B962-8F240E84903E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {92DB14A8-1FEB-4491-9CF5-3622A505E6B7}
+	EndGlobalSection
+EndGlobal

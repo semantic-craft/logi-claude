@@ -1,0 +1,16 @@
+# Local agent wiring, evidence and machine state
+/AGENTS.md
+/CONTEXT.md
+/.agents/
+/.claude/
+/.codex/
+/.copilot/
+/.opencode/
+/.scratch/
+/docs/
+.ruff_cache/
+__pycache__/
+*.pyc
+.DS_Store
+.env
+.env.*

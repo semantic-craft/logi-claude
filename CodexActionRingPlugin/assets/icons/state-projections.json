@@ -1,0 +1,32 @@
+{
+  "normal": {
+    "opacity": 1.0,
+    "overlay": null,
+    "transient": false
+  },
+  "persistent_unavailable": {
+    "opacity": 0.38,
+    "overlay": null,
+    "transient": false
+  },
+  "selection_race_not_dispatched": {
+    "opacity": 0.38,
+    "overlay": "not_dispatched_race",
+    "transient": true
+  },
+  "dispatch_requested": {
+    "opacity": 1.0,
+    "overlay": "dispatch_requested",
+    "transient": true
+  },
+  "dispatch_failed": {
+    "opacity": 1.0,
+    "overlay": "dispatch_failed",
+    "transient": true
+  },
+  "outcome_unknown": {
+    "opacity": 1.0,
+    "overlay": "outcome_unknown",
+    "transient": true
+  }
+}

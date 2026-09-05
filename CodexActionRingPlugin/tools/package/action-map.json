@@ -1,0 +1,74 @@
+{
+  "actionIconCount": 8,
+  "actionSymbolCount": 8,
+  "eventMappingSha256": "93a5116a3678b49d7c439bbfeea2407485f9161896c770283201168b785f3d4d",
+  "eventSourceSha256": "2a42be04759f340481228f4fc1fcfee3920429648c682a3822f224ab7a10d02a",
+  "mappingCount": 8,
+  "mappings": [
+    {
+      "actionClass": "Loupedeck.CodexActionRingPlugin.Logitech.Primary.NextAttentionCommand",
+      "packageFilename": "Loupedeck.CodexActionRingPlugin.Logitech.Primary.NextAttentionCommand.svg",
+      "parameter": null,
+      "pickerSha256": "89bdf7e94353b74043d158feca9b5a8bd70b951aaa3467e9a100139a519f4421",
+      "ringSha256": "b27b697d3e6fe0cd549d732c212bb7abab5095fe57841bb17f01fee8f1ab5718",
+      "semanticKey": "next_attention"
+    },
+    {
+      "actionClass": "Loupedeck.CodexActionRingPlugin.Logitech.Primary.ViewActivityCommand",
+      "packageFilename": "Loupedeck.CodexActionRingPlugin.Logitech.Primary.ViewActivityCommand.svg",
+      "parameter": null,
+      "pickerSha256": "7336b1be42f6785b4dc843b70fb74d5fe06c976e5fc553cee66bcdc2d725f1a1",
+      "ringSha256": "eed7fb85fec785e29179fe64028e3c6b32704df5e3270e741286307b53a66874",
+      "semanticKey": "view_activity"
+    },
+    {
+      "actionClass": "Loupedeck.CodexActionRingPlugin.Logitech.Primary.NewChatCommand",
+      "packageFilename": "Loupedeck.CodexActionRingPlugin.Logitech.Primary.NewChatCommand.svg",
+      "parameter": null,
+      "pickerSha256": "87011c4a7b090c76374023e6a779a9d6cdad96327e773c4f14747ca8a14ef7e8",
+      "ringSha256": "b8fe68badb1d88281832438bdb53429b8490107ab782ecd91ee6c217c1f689de",
+      "semanticKey": "new_chat"
+    },
+    {
+      "actionClass": "Loupedeck.CodexActionRingPlugin.Logitech.Primary.QuickChatCommand",
+      "packageFilename": "Loupedeck.CodexActionRingPlugin.Logitech.Primary.QuickChatCommand.svg",
+      "parameter": null,
+      "pickerSha256": "d455352c4f9cef837736d5a81bb5ee182691a2ebf3b1f68970d07064dd11eef9",
+      "ringSha256": "0c389100e6349ade4606aa238432d9023692413f7d7193bc9ba2732ca67b5719",
+      "semanticKey": "quick_chat"
+    },
+    {
+      "actionClass": "Loupedeck.CodexActionRingPlugin.Logitech.Primary.SideChatCommand",
+      "packageFilename": "Loupedeck.CodexActionRingPlugin.Logitech.Primary.SideChatCommand.svg",
+      "parameter": null,
+      "pickerSha256": "42b4a12407ca1fabd23d71741347fe4576a6b0c206968fccbcb05aea10ccb0b0",
+      "ringSha256": "5abd5955e4c6e3a3299db806d2ef06055924afc61e2a1e6acf0f3d7be7f3de9a",
+      "semanticKey": "side_chat"
+    },
+    {
+      "actionClass": "Loupedeck.CodexActionRingPlugin.Logitech.Primary.RecentlyViewedCommand",
+      "packageFilename": "Loupedeck.CodexActionRingPlugin.Logitech.Primary.RecentlyViewedCommand.svg",
+      "parameter": null,
+      "pickerSha256": "c3f4c63815c164b6b81da525eb1e44717acb712aed88321a760afa51ff76f9c3",
+      "ringSha256": "ba7d18373c673132e674879a3ef7a605495119ace6229f4734dbcc83a575fece",
+      "semanticKey": "recently_viewed"
+    },
+    {
+      "actionClass": "Loupedeck.CodexActionRingPlugin.Logitech.Primary.CopyDeepLinkCommand",
+      "packageFilename": "Loupedeck.CodexActionRingPlugin.Logitech.Primary.CopyDeepLinkCommand.svg",
+      "parameter": null,
+      "pickerSha256": "26682796fd911e565061a8131abd0b1905abc46659c02e499e6c351d1e7b330d",
+      "ringSha256": "18c94aaa6fc2a69a180c6816e41b40e1b69be93012f0e3a83476cfdbef785d9d",
+      "semanticKey": "copy_deep_link"
+    },
+    {
+      "actionClass": "Loupedeck.CodexActionRingPlugin.Logitech.Primary.DictationCommand",
+      "packageFilename": "Loupedeck.CodexActionRingPlugin.Logitech.Primary.DictationCommand.svg",
+      "parameter": null,
+      "pickerSha256": "7dcdf4646bebeecef8f463ed262663c403bee3fe3b717636e4391c69fcb87901",
+      "ringSha256": "161b4b8b99abf240ac2526c1d60dcadf81baa64c160c1bb4b4265e1dc6ea6148",
+      "semanticKey": "dictation"
+    }
+  ],
+  "pluginIconSha256": "7064d6b06f8aded1d69d912b6c2c4b454754716f3b374ec2e469b8a11a31e454"
+}

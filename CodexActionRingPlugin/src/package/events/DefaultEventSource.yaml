@@ -1,0 +1,12 @@
+displayName: Codex Action Ring
+description: Honest local-delivery feedback for Codex Action Ring
+events:
+  - name: DispatchRequested
+    displayName: Dispatch Requested
+    description: A local delivery request was accepted; the Codex outcome is unknown.
+  - name: DispatchFailed
+    displayName: Dispatch Failed
+    description: The local delivery adapter synchronously rejected or failed the request.
+  - name: SelectionRejected
+    displayName: Selection Rejected
+    description: A selection-time availability race prevented local delivery.
