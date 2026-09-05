@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="390" viewBox="0 0 1600 390">
+<rect width="1600" height="390" fill="#F5F4F0"/>
+<text x="40" y="47" fill="#17191A" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="24" font-weight="700">Picker symbols · transparent single-black · 46 px glyph</text>
+<rect x="57" y="75" width="122" height="92" rx="14" fill="#FFFFFF" stroke="#D7D2C8"/>
+<g transform="translate(95 88) scale(0.71875)" fill="none" stroke="#000000" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" opacity="1"><path d="M32 9 12 17v14c0 12 8 20 20 25 12-5 20-13 20-25V17L32 9Z"/>
+  <path d="m23 32 6 6 12-13"/></g>
+<text x="118" y="194" fill="#36393B" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="650">Permission Mode</text>
+<rect x="254" y="75" width="122" height="92" rx="14" fill="#FFFFFF" stroke="#D7D2C8"/>
+<g transform="translate(292 88) scale(0.71875)" fill="none" stroke="#000000" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" opacity="1"><rect x="18" y="18" width="28" height="28" rx="6"/>
+  <rect x="27" y="27" width="10" height="10" rx="2"/>
+  <path d="M25 18v-8M32 18v-8M39 18v-8M25 54v-8M32 54v-8M39 54v-8M18 25h-8M18 32h-8M18 39h-8M54 25h-8M54 32h-8M54 39h-8"/></g>
+<text x="315" y="194" fill="#36393B" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="650">Model</text>
+<rect x="451" y="75" width="122" height="92" rx="14" fill="#FFFFFF" stroke="#D7D2C8"/>
+<g transform="translate(489 88) scale(0.71875)" fill="none" stroke="#000000" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" opacity="1"><path d="M12 42a20 20 0 1 1 40 0"/>
+  <path d="M32 42 44 25"/>
+  <circle cx="32" cy="42" r="3.5"/>
+  <path d="M12 42h4M48 42h4"/></g>
+<text x="512" y="194" fill="#36393B" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="650">Effort</text>
+<rect x="648" y="75" width="122" height="92" rx="14" fill="#FFFFFF" stroke="#D7D2C8"/>
+<g transform="translate(686 88) scale(0.71875)" fill="none" stroke="#000000" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" opacity="1"><rect x="10" y="12" width="44" height="40" rx="6"/><path d="M35 12v40M17 22h11M17 31h11M42 23h5M42 32h5"/></g>
+<text x="709" y="194" fill="#36393B" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="650">Side Chat</text>
+<rect x="845" y="75" width="122" height="92" rx="14" fill="#FFFFFF" stroke="#D7D2C8"/>
+<g transform="translate(883 88) scale(0.71875)" fill="none" stroke="#000000" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" opacity="1"><rect x="10" y="12" width="44" height="40" rx="6"/>
+  <path d="M32 12v40M21 26v12M15 32h12M38 32h10"/></g>
+<text x="906" y="194" fill="#36393B" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="650">Toggle Diff</text>
+<rect x="1042" y="75" width="122" height="92" rx="14" fill="#FFFFFF" stroke="#D7D2C8"/>
+<g transform="translate(1080 88) scale(0.71875)" fill="none" stroke="#000000" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" opacity="1"><rect x="10" y="12" width="44" height="40" rx="6"/>
+  <path d="m19 24 9 8-9 8M33 40h12"/></g>
+<text x="1103" y="194" fill="#36393B" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="650">Toggle Terminal</text>
+<rect x="1239" y="75" width="122" height="92" rx="14" fill="#FFFFFF" stroke="#D7D2C8"/>
+<g transform="translate(1277 88) scale(0.71875)" fill="none" stroke="#000000" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" opacity="1"><path d="M11 18h24M11 32h16M11 46h24"/>
+  <path d="M42 26a11 11 0 0 1 15 4m0-8v8h-8M54 46a11 11 0 0 1-15-4m0 8v-8h8"/></g>
+<text x="1300" y="194" fill="#36393B" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="650">View Mode</text>
+<rect x="1436" y="75" width="122" height="92" rx="14" fill="#FFFFFF" stroke="#D7D2C8"/>
+<g transform="translate(1474 88) scale(0.71875)" fill="none" stroke="#000000" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" opacity="1"><path d="M20 16v-3a4 4 0 0 1 4-4h26a4 4 0 0 1 4 4v26a4 4 0 0 1-4 4h-3"/>
+  <rect x="10" y="17" width="34" height="34" rx="4"/>
+  <path d="M19 34h16m0 0-6-6m6 6-6 6"/></g>
+<text x="1497" y="194" fill="#36393B" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="650">Next Session</text>
+</svg>

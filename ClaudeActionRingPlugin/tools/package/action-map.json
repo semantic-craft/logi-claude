@@ -1,0 +1,74 @@
+{
+  "actionIconCount": 8,
+  "actionSymbolCount": 8,
+  "eventMappingSha256": "93a5116a3678b49d7c439bbfeea2407485f9161896c770283201168b785f3d4d",
+  "eventSourceSha256": "5332a12efdc2a630c1c6cd585fb141366b75a5f5476d6a08dd47744963baf973",
+  "mappingCount": 8,
+  "mappings": [
+    {
+      "actionClass": "Loupedeck.ClaudeActionRingPlugin.Logitech.Primary.PermissionModeCommand",
+      "packageFilename": "Loupedeck.ClaudeActionRingPlugin.Logitech.Primary.PermissionModeCommand.svg",
+      "parameter": null,
+      "pickerSha256": "17db63cfee73d5293c43494e9e2c89f00643939047e1bda26f18662eea59f7e5",
+      "ringSha256": "b4319c3dd56f6fb8f3c03ac81d2589edda4c1e5d6b6508da838c5d582694f72a",
+      "semanticKey": "permission_mode"
+    },
+    {
+      "actionClass": "Loupedeck.ClaudeActionRingPlugin.Logitech.Primary.ModelMenuCommand",
+      "packageFilename": "Loupedeck.ClaudeActionRingPlugin.Logitech.Primary.ModelMenuCommand.svg",
+      "parameter": null,
+      "pickerSha256": "bd52107308866db974e808286735210e286497f7725500f133476f50efb6f1a9",
+      "ringSha256": "f7e2b6429a94bd968a1cbd22a456ac3756a88434fb7affaf5c09fe5b0e02d115",
+      "semanticKey": "model_menu"
+    },
+    {
+      "actionClass": "Loupedeck.ClaudeActionRingPlugin.Logitech.Primary.EffortMenuCommand",
+      "packageFilename": "Loupedeck.ClaudeActionRingPlugin.Logitech.Primary.EffortMenuCommand.svg",
+      "parameter": null,
+      "pickerSha256": "4276431d0b4acda16b0179fb35ec3c8dc64bb43985b9aacc724f4d4131b5961a",
+      "ringSha256": "96dbb328e7f46af86bd12782c48144bf1ba7686cfe793807ed87fc44b93dc267",
+      "semanticKey": "effort_menu"
+    },
+    {
+      "actionClass": "Loupedeck.ClaudeActionRingPlugin.Logitech.Primary.SideChatCommand",
+      "packageFilename": "Loupedeck.ClaudeActionRingPlugin.Logitech.Primary.SideChatCommand.svg",
+      "parameter": null,
+      "pickerSha256": "42b4a12407ca1fabd23d71741347fe4576a6b0c206968fccbcb05aea10ccb0b0",
+      "ringSha256": "5abd5955e4c6e3a3299db806d2ef06055924afc61e2a1e6acf0f3d7be7f3de9a",
+      "semanticKey": "side_chat"
+    },
+    {
+      "actionClass": "Loupedeck.ClaudeActionRingPlugin.Logitech.Primary.ToggleDiffCommand",
+      "packageFilename": "Loupedeck.ClaudeActionRingPlugin.Logitech.Primary.ToggleDiffCommand.svg",
+      "parameter": null,
+      "pickerSha256": "a96d87d3504cba7abde75ad291991f53f1b2cd559dcf81977f05f33583ecc297",
+      "ringSha256": "4055d5d6c55bd65defbdf7e389a66bb1fd827296d657607fe8c26b39fb310099",
+      "semanticKey": "toggle_diff"
+    },
+    {
+      "actionClass": "Loupedeck.ClaudeActionRingPlugin.Logitech.Primary.ToggleTerminalCommand",
+      "packageFilename": "Loupedeck.ClaudeActionRingPlugin.Logitech.Primary.ToggleTerminalCommand.svg",
+      "parameter": null,
+      "pickerSha256": "f7dccc5f419b35916fea9a1f3e00c80bb5d3c9337abd4f0b15bd5f2ac8f71054",
+      "ringSha256": "d12e34f40a3c9d68bbb9ff6cb537f20b0e8a628e4375a1fa5f5d3536b3725416",
+      "semanticKey": "toggle_terminal"
+    },
+    {
+      "actionClass": "Loupedeck.ClaudeActionRingPlugin.Logitech.Primary.ViewModeCommand",
+      "packageFilename": "Loupedeck.ClaudeActionRingPlugin.Logitech.Primary.ViewModeCommand.svg",
+      "parameter": null,
+      "pickerSha256": "922690bb04dc5794afea678423702489b4bc416d441d4c7fd5a894382619cf1d",
+      "ringSha256": "8d3688e99cb9ef3c4846ebb3ab73b473607a3c98f5d104c93f4df04da1b83152",
+      "semanticKey": "view_mode"
+    },
+    {
+      "actionClass": "Loupedeck.ClaudeActionRingPlugin.Logitech.Primary.NextSessionCommand",
+      "packageFilename": "Loupedeck.ClaudeActionRingPlugin.Logitech.Primary.NextSessionCommand.svg",
+      "parameter": null,
+      "pickerSha256": "4134379e07710fb5a24f89feadd32b5b3bc446804b8670abf6ba951affd6f830",
+      "ringSha256": "25f98732f07f063f086ff802c2874c9082e588862815896a2c303cbc02d90d17",
+      "semanticKey": "next_session"
+    }
+  ],
+  "pluginIconSha256": "7b61b081366e8b62f58b505944986f4d6087aae4dd1c24bf236cb69786cdf4fd"
+}

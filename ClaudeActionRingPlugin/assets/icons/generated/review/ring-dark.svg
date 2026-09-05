@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="500" viewBox="0 0 1600 500">
+<rect width="1600" height="500" fill="#111315"/>
+<text x="40" y="47" fill="#F3F3EF" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="24" font-weight="700">Ring projections · dark host · 82 px slot / 54 px glyph</text>
+<text x="1560" y="47" fill="#A4A8AB" text-anchor="end" font-family="ui-monospace, monospace" font-size="13">NORMAL 100% · UNAVAILABLE 38%</text>
+<circle cx="72" cy="134" r="41" fill="#D97757" opacity="1"/>
+<g transform="translate(45 107) scale(0.84375)" fill="none" stroke="#FFFFFF" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" opacity="1"><path d="M32 9 12 17v14c0 12 8 20 20 25 12-5 20-13 20-25V17L32 9Z"/>
+  <path d="m23 32 6 6 12-13"/></g>
+<circle cx="165" cy="134" r="41" fill="#D97757" opacity="0.38"/>
+<g transform="translate(138 107) scale(0.84375)" fill="none" stroke="#FFFFFF" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" opacity="0.38"><path d="M32 9 12 17v14c0 12 8 20 20 25 12-5 20-13 20-25V17L32 9Z"/>
+  <path d="m23 32 6 6 12-13"/></g>
+<text x="118" y="196" fill="#F3F3EF" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="650">Permission Mode</text>
+<text x="72" y="221" fill="#A4A8AB" text-anchor="middle" font-family="ui-monospace, monospace" font-size="10">100%</text>
+<text x="165" y="221" fill="#A4A8AB" text-anchor="middle" font-family="ui-monospace, monospace" font-size="10">38%</text>
+<circle cx="269" cy="134" r="41" fill="#D97757" opacity="1"/>
+<g transform="translate(242 107) scale(0.84375)" fill="none" stroke="#FFFFFF" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" opacity="1"><rect x="18" y="18" width="28" height="28" rx="6"/>
+  <rect x="27" y="27" width="10" height="10" rx="2"/>
+  <path d="M25 18v-8M32 18v-8M39 18v-8M25 54v-8M32 54v-8M39 54v-8M18 25h-8M18 32h-8M18 39h-8M54 25h-8M54 32h-8M54 39h-8"/></g>
+<circle cx="362" cy="134" r="41" fill="#D97757" opacity="0.38"/>
+<g transform="translate(335 107) scale(0.84375)" fill="none" stroke="#FFFFFF" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" opacity="0.38"><rect x="18" y="18" width="28" height="28" rx="6"/>
+  <rect x="27" y="27" width="10" height="10" rx="2"/>
+  <path d="M25 18v-8M32 18v-8M39 18v-8M25 54v-8M32 54v-8M39 54v-8M18 25h-8M18 32h-8M18 39h-8M54 25h-8M54 32h-8M54 39h-8"/></g>
+<text x="315" y="196" fill="#F3F3EF" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="650">Model</text>
+<text x="269" y="221" fill="#A4A8AB" text-anchor="middle" font-family="ui-monospace, monospace" font-size="10">100%</text>
+<text x="362" y="221" fill="#A4A8AB" text-anchor="middle" font-family="ui-monospace, monospace" font-size="10">38%</text>
+<circle cx="466" cy="134" r="41" fill="#D97757" opacity="1"/>
+<g transform="translate(439 107) scale(0.84375)" fill="none" stroke="#FFFFFF" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" opacity="1"><path d="M12 42a20 20 0 1 1 40 0"/>
+  <path d="M32 42 44 25"/>
+  <circle cx="32" cy="42" r="3.5"/>
+  <path d="M12 42h4M48 42h4"/></g>
+<circle cx="559" cy="134" r="41" fill="#D97757" opacity="0.38"/>
+<g transform="translate(532 107) scale(0.84375)" fill="none" stroke="#FFFFFF" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" opacity="0.38"><path d="M12 42a20 20 0 1 1 40 0"/>
+  <path d="M32 42 44 25"/>
+  <circle cx="32" cy="42" r="3.5"/>
+  <path d="M12 42h4M48 42h4"/></g>
+<text x="512" y="196" fill="#F3F3EF" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="650">Effort</text>
+<text x="466" y="221" fill="#A4A8AB" text-anchor="middle" font-family="ui-monospace, monospace" font-size="10">100%</text>
+<text x="559" y="221" fill="#A4A8AB" text-anchor="middle" font-family="ui-monospace, monospace" font-size="10">38%</text>
+<circle cx="663" cy="134" r="41" fill="#D97757" opacity="1"/>
+<g transform="translate(636 107) scale(0.84375)" fill="none" stroke="#FFFFFF" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" opacity="1"><rect x="10" y="12" width="44" height="40" rx="6"/><path d="M35 12v40M17 22h11M17 31h11M42 23h5M42 32h5"/></g>
+<circle cx="756" cy="134" r="41" fill="#D97757" opacity="0.38"/>
+<g transform="translate(729 107) scale(0.84375)" fill="none" stroke="#FFFFFF" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" opacity="0.38"><rect x="10" y="12" width="44" height="40" rx="6"/><path d="M35 12v40M17 22h11M17 31h11M42 23h5M42 32h5"/></g>
+<text x="709" y="196" fill="#F3F3EF" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="650">Side Chat</text>
+<text x="663" y="221" fill="#A4A8AB" text-anchor="middle" font-family="ui-monospace, monospace" font-size="10">100%</text>
+<text x="756" y="221" fill="#A4A8AB" text-anchor="middle" font-family="ui-monospace, monospace" font-size="10">38%</text>
+<circle cx="860" cy="134" r="41" fill="#D97757" opacity="1"/>
+<g transform="translate(833 107) scale(0.84375)" fill="none" stroke="#FFFFFF" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" opacity="1"><rect x="10" y="12" width="44" height="40" rx="6"/>
+  <path d="M32 12v40M21 26v12M15 32h12M38 32h10"/></g>
+<circle cx="953" cy="134" r="41" fill="#D97757" opacity="0.38"/>
+<g transform="translate(926 107) scale(0.84375)" fill="none" stroke="#FFFFFF" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" opacity="0.38"><rect x="10" y="12" width="44" height="40" rx="6"/>
+  <path d="M32 12v40M21 26v12M15 32h12M38 32h10"/></g>
+<text x="906" y="196" fill="#F3F3EF" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="650">Toggle Diff</text>
+<text x="860" y="221" fill="#A4A8AB" text-anchor="middle" font-family="ui-monospace, monospace" font-size="10">100%</text>
+<text x="953" y="221" fill="#A4A8AB" text-anchor="middle" font-family="ui-monospace, monospace" font-size="10">38%</text>
+<circle cx="1057" cy="134" r="41" fill="#D97757" opacity="1"/>
+<g transform="translate(1030 107) scale(0.84375)" fill="none" stroke="#FFFFFF" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" opacity="1"><rect x="10" y="12" width="44" height="40" rx="6"/>
+  <path d="m19 24 9 8-9 8M33 40h12"/></g>
+<circle cx="1150" cy="134" r="41" fill="#D97757" opacity="0.38"/>
+<g transform="translate(1123 107) scale(0.84375)" fill="none" stroke="#FFFFFF" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" opacity="0.38"><rect x="10" y="12" width="44" height="40" rx="6"/>
+  <path d="m19 24 9 8-9 8M33 40h12"/></g>
+<text x="1103" y="196" fill="#F3F3EF" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="650">Toggle Terminal</text>
+<text x="1057" y="221" fill="#A4A8AB" text-anchor="middle" font-family="ui-monospace, monospace" font-size="10">100%</text>
+<text x="1150" y="221" fill="#A4A8AB" text-anchor="middle" font-family="ui-monospace, monospace" font-size="10">38%</text>
+<circle cx="1254" cy="134" r="41" fill="#D97757" opacity="1"/>
+<g transform="translate(1227 107) scale(0.84375)" fill="none" stroke="#FFFFFF" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" opacity="1"><path d="M11 18h24M11 32h16M11 46h24"/>
+  <path d="M42 26a11 11 0 0 1 15 4m0-8v8h-8M54 46a11 11 0 0 1-15-4m0 8v-8h8"/></g>
+<circle cx="1347" cy="134" r="41" fill="#D97757" opacity="0.38"/>
+<g transform="translate(1320 107) scale(0.84375)" fill="none" stroke="#FFFFFF" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" opacity="0.38"><path d="M11 18h24M11 32h16M11 46h24"/>
+  <path d="M42 26a11 11 0 0 1 15 4m0-8v8h-8M54 46a11 11 0 0 1-15-4m0 8v-8h8"/></g>
+<text x="1300" y="196" fill="#F3F3EF" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="650">View Mode</text>
+<text x="1254" y="221" fill="#A4A8AB" text-anchor="middle" font-family="ui-monospace, monospace" font-size="10">100%</text>
+<text x="1347" y="221" fill="#A4A8AB" text-anchor="middle" font-family="ui-monospace, monospace" font-size="10">38%</text>
+<circle cx="1451" cy="134" r="41" fill="#D97757" opacity="1"/>
+<g transform="translate(1424 107) scale(0.84375)" fill="none" stroke="#FFFFFF" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" opacity="1"><path d="M20 16v-3a4 4 0 0 1 4-4h26a4 4 0 0 1 4 4v26a4 4 0 0 1-4 4h-3"/>
+  <rect x="10" y="17" width="34" height="34" rx="4"/>
+  <path d="M19 34h16m0 0-6-6m6 6-6 6"/></g>
+<circle cx="1544" cy="134" r="41" fill="#D97757" opacity="0.38"/>
+<g transform="translate(1517 107) scale(0.84375)" fill="none" stroke="#FFFFFF" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" opacity="0.38"><path d="M20 16v-3a4 4 0 0 1 4-4h26a4 4 0 0 1 4 4v26a4 4 0 0 1-4 4h-3"/>
+  <rect x="10" y="17" width="34" height="34" rx="4"/>
+  <path d="M19 34h16m0 0-6-6m6 6-6 6"/></g>
+<text x="1497" y="196" fill="#F3F3EF" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="650">Next Session</text>
+<text x="1451" y="221" fill="#A4A8AB" text-anchor="middle" font-family="ui-monospace, monospace" font-size="10">100%</text>
+<text x="1544" y="221" fill="#A4A8AB" text-anchor="middle" font-family="ui-monospace, monospace" font-size="10">38%</text>
+</svg>
