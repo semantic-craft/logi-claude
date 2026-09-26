@@ -35,10 +35,14 @@ namespace Loupedeck.ClaudeActionRingPlugin.Composition
             DesktopKey.I => VirtualKeyCode.KeyI,
             DesktopKey.E => VirtualKeyCode.KeyE,
             DesktopKey.Semicolon => VirtualKeyCode.Oem1,
-            DesktopKey.D => VirtualKeyCode.KeyD,
+            DesktopKey.B => VirtualKeyCode.KeyB,
             DesktopKey.Grave => VirtualKeyCode.Oem102,
             DesktopKey.O => VirtualKeyCode.KeyO,
             DesktopKey.Tab => VirtualKeyCode.Tab,
+            DesktopKey.Escape => VirtualKeyCode.Escape,
+            DesktopKey.S => VirtualKeyCode.KeyS,
+            DesktopKey.N => VirtualKeyCode.KeyN,
+            DesktopKey.Backslash => VirtualKeyCode.Oem5,
             _ => throw new ArgumentOutOfRangeException(nameof(key), key, "Unsupported shortcut key."),
         };
 

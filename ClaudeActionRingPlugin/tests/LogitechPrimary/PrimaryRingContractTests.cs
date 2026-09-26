@@ -13,14 +13,19 @@ namespace Loupedeck.ClaudeActionRingPlugin.Logitech.Primary
             RingActionId.ModelMenu,
             RingActionId.EffortMenu,
             RingActionId.SideChat,
-            RingActionId.ToggleDiff,
+            RingActionId.ToggleBrowser,
             RingActionId.ToggleTerminal,
             RingActionId.ViewMode,
             RingActionId.NextSession,
+            RingActionId.StopResponse,
+            RingActionId.SelectElement,
+            RingActionId.NewSession,
+            RingActionId.PreviousSession,
+            RingActionId.ClosePane,
         };
 
         [Fact]
-        public void PrimaryOrderMatchesTheLockedClockwiseContract()
+        public void PrimaryOrderMatchesTheLockedCatalogContract()
         {
             Assert.Equal(PrimaryRingContractTests.ExpectedOrder, PrimaryRingContract.Order);
             Assert.Equal(
@@ -39,15 +44,20 @@ namespace Loupedeck.ClaudeActionRingPlugin.Logitech.Primary
                 (RingActionId.ModelMenu, "model_menu", "Loupedeck.ClaudeActionRingPlugin.Logitech.Primary.ModelMenuCommand"),
                 (RingActionId.EffortMenu, "effort_menu", "Loupedeck.ClaudeActionRingPlugin.Logitech.Primary.EffortMenuCommand"),
                 (RingActionId.SideChat, "side_chat", "Loupedeck.ClaudeActionRingPlugin.Logitech.Primary.SideChatCommand"),
-                (RingActionId.ToggleDiff, "toggle_diff", "Loupedeck.ClaudeActionRingPlugin.Logitech.Primary.ToggleDiffCommand"),
+                (RingActionId.ToggleBrowser, "toggle_browser", "Loupedeck.ClaudeActionRingPlugin.Logitech.Primary.ToggleBrowserCommand"),
                 (RingActionId.ToggleTerminal, "toggle_terminal", "Loupedeck.ClaudeActionRingPlugin.Logitech.Primary.ToggleTerminalCommand"),
                 (RingActionId.ViewMode, "view_mode", "Loupedeck.ClaudeActionRingPlugin.Logitech.Primary.ViewModeCommand"),
                 (RingActionId.NextSession, "next_session", "Loupedeck.ClaudeActionRingPlugin.Logitech.Primary.NextSessionCommand"),
+                (RingActionId.StopResponse, "stop_response", "Loupedeck.ClaudeActionRingPlugin.Logitech.Primary.StopResponseCommand"),
+                (RingActionId.SelectElement, "select_element", "Loupedeck.ClaudeActionRingPlugin.Logitech.Primary.SelectElementCommand"),
+                (RingActionId.NewSession, "new_session", "Loupedeck.ClaudeActionRingPlugin.Logitech.Primary.NewSessionCommand"),
+                (RingActionId.PreviousSession, "previous_session", "Loupedeck.ClaudeActionRingPlugin.Logitech.Primary.PreviousSessionCommand"),
+                (RingActionId.ClosePane, "close_pane", "Loupedeck.ClaudeActionRingPlugin.Logitech.Primary.ClosePaneCommand"),
             };
 
-            Assert.Equal(8, commands.Length);
-            Assert.Equal(8, commands.Select(entry => entry.WrapperType).Distinct().Count());
-            Assert.Equal(8, commands.Select(entry => entry.ActionName).Distinct().Count());
+            Assert.Equal(13, commands.Length);
+            Assert.Equal(13, commands.Select(entry => entry.WrapperType).Distinct().Count());
+            Assert.Equal(13, commands.Select(entry => entry.ActionName).Distinct().Count());
             Assert.Equal(
                 expected,
                 commands.Select(entry => (entry.Id, entry.IconKey, entry.ActionName)));

@@ -10,7 +10,7 @@ namespace Loupedeck.ClaudeActionRingPlugin.DesktopBridge.Tests
 
     public sealed class ClaudeDesktopBridgeTests
     {
-        private const String Version = "0.1.0";
+        private const String Version = "0.2.0";
 
         public static IEnumerable<Object[]> NonMatchingForegroundApplications()
         {
@@ -78,7 +78,7 @@ namespace Loupedeck.ClaudeActionRingPlugin.DesktopBridge.Tests
                 .Select(definition => ((RingActionDelivery.Desktop)definition.Delivery).Shortcut)
                 .ToArray();
 
-            Assert.Equal(8, shortcuts.Length);
+            Assert.Equal(13, shortcuts.Length);
 
             foreach (var shortcut in shortcuts)
             {

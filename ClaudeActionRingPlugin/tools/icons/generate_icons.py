@@ -27,10 +27,15 @@ ACTION_KEYS = (
     "model_menu",
     "effort_menu",
     "side_chat",
-    "toggle_diff",
+    "toggle_browser",
     "toggle_terminal",
     "view_mode",
     "next_session",
+    "stop_response",
+    "select_element",
+    "new_session",
+    "previous_session",
+    "close_pane",
 )
 
 DISPLAY_NAMES = {
@@ -38,10 +43,15 @@ DISPLAY_NAMES = {
     "model_menu": "Model",
     "effort_menu": "Effort",
     "side_chat": "Side Chat",
-    "toggle_diff": "Toggle Diff",
+    "toggle_browser": "Toggle Browser",
     "toggle_terminal": "Toggle Terminal",
     "view_mode": "View Mode",
     "next_session": "Next Session",
+    "stop_response": "Stop Response",
+    "select_element": "Select Element",
+    "new_session": "New Session",
+    "previous_session": "Previous Session",
+    "close_pane": "Close Pane",
 }
 
 SVG_INNER = re.compile(r"<svg\b[^>]*>(.*)</svg>\s*$", re.DOTALL)

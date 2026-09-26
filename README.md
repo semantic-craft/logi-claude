@@ -2,29 +2,34 @@
 
 <img src="ClaudeActionRingPlugin/assets/icons/generated/plugin/Icon256x256.png" width="96" alt="Claude Action Ring icon">
 
-Eight Claude Desktop Code-tab actions for the Logitech MX Master 4 for Mac Actions Ring.
+Thirteen Claude Desktop Code-tab actions for the Logitech MX Master 4 for Mac Actions Ring: eight for the default ring, five optional swaps.
 Developed by **xianwei zhang**. Independent integration; not built, endorsed or supported by Anthropic or Logitech.
 
 ## Install
 
 Requires macOS, Claude Desktop (Code tab), Logi Options+ with plugin support, and MX Master 4 for Mac.
 
-1. Download [ClaudeActionRing_0_1_0.lplug4](ClaudeActionRingPlugin/artifacts/ClaudeActionRing_0_1_0.lplug4) using GitHub's download button and open it to install.
-2. In Options+, select Claude Action Ring and assign the eight actions to the eight ring slots.
+1. Download [ClaudeActionRing_0_2_0.lplug4](ClaudeActionRingPlugin/artifacts/ClaudeActionRing_0_2_0.lplug4) using GitHub's download button and open it to install.
+2. In Options+, select Claude Action Ring and assign any eight actions to the eight ring slots.
 3. Keep Claude Desktop frontmost with the Code tab active. The actions send Claude's own documented Code-tab shortcuts, so they do nothing useful on the Chat or Cowork tabs.
 
-| Action | Delivery |
-| --- | --- |
-| Permission Mode | Command–Shift–M |
-| Model | Command–Shift–I |
-| Effort | Command–Shift–E |
-| Side Chat | Command–; |
-| Toggle Diff | Command–Shift–D |
-| Toggle Terminal | Control–` |
-| View Mode | Control–O |
-| Next Session | Control–Tab |
+| Action | Delivery | Default ring |
+| --- | --- | --- |
+| Permission Mode | Command–Shift–M | yes |
+| Model | Command–Shift–I | yes |
+| Effort | Command–Shift–E | yes |
+| Side Chat | Command–; | yes |
+| Toggle Browser | Command–Shift–B | yes |
+| Toggle Terminal | Control–` | yes |
+| View Mode | Control–O | yes |
+| Next Session | Control–Tab | yes |
+| Stop Response | Esc | optional |
+| Select Element | Command–Shift–S | optional |
+| New Session | Command–N | optional |
+| Previous Session | Control–Shift–Tab | optional |
+| Close Pane | Command–\ | optional |
 
-Toggle Terminal is sent as the SDK key `Oem102`, which the Logi Plugin Service maps to the physical ` key on ANSI keyboards. Shortcut availability depends on your Claude Desktop version; the mapping follows the [Code tab keyboard shortcuts](https://code.claude.com/docs/en/desktop#keyboard-shortcuts) reference.
+Toggle Terminal is sent as the SDK key `Oem102`, which the Logi Plugin Service maps to the physical ` key on ANSI keyboards; Close Pane is sent as `Oem5` (the `\` key). Select Element needs the Browser pane open. Stop Response sends a bare Esc, which closes an open menu instead of stopping Claude when one is showing. Shortcut availability depends on your Claude Desktop version; the mapping follows the [Code tab keyboard shortcuts](https://code.claude.com/docs/en/desktop#keyboard-shortcuts) reference.
 
 ## Build and test
 
@@ -37,7 +42,7 @@ python3 -m unittest discover -s ClaudeActionRingPlugin/tests/IconSystem -v
 ```
 
 Run each .NET test project under `ClaudeActionRingPlugin/tests/` with `dotnet test <project.csproj>`.
-See [icons](ClaudeActionRingPlugin/tools/icons/README.md), [packaging](ClaudeActionRingPlugin/tools/package/README.md) and [validation](ClaudeActionRingPlugin/tools/validate/README.md) for the icon pipeline and the official LogiPluginTool workflow. Release versions are immutable; choose a new version when preparing a new package. The checked-in 0.1.0 package is the exact artifact produced by `package_release.py` and verified by LogiPluginTool 6.1.4.22672.
+See [icons](ClaudeActionRingPlugin/tools/icons/README.md), [packaging](ClaudeActionRingPlugin/tools/package/README.md) and [validation](ClaudeActionRingPlugin/tools/validate/README.md) for the icon pipeline and the official LogiPluginTool workflow. Release versions are immutable; choose a new version when preparing a new package. The checked-in 0.2.0 package is the exact artifact produced by `package_release.py` from a Release build with `-p:DebugType=None -p:DebugSymbols=false` and verified by LogiPluginTool 6.1.4.22672; 0.1.0 is kept as the previous release.
 
 ## Privacy and support
 

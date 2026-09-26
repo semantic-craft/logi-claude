@@ -26,16 +26,16 @@ namespace Loupedeck.ClaudeActionRingPlugin.Integration.Tests
         }
 
         [Fact]
-        public void CompleteEightActionCatalogFlowsThroughTheSingleExecutorWithoutFallback()
+        public void CompleteActionCatalogFlowsThroughTheSingleExecutorWithoutFallback()
         {
             var fixture = new IntegrationFixture();
             var results = RingActionCatalog.Definitions.ToDictionary(
                 definition => definition.Id,
                 definition => fixture.Composition.PrimaryActionExecutor.Execute(definition.Id));
 
-            Assert.Equal(8, results.Count);
+            Assert.Equal(13, results.Count);
             Assert.All(results.Values, result => Assert.Equal(DispatchResult.DispatchRequested, result));
-            Assert.Equal(8, fixture.Shortcuts.Calls.Count);
+            Assert.Equal(13, fixture.Shortcuts.Calls.Count);
         }
 
         [Fact]
@@ -59,16 +59,21 @@ namespace Loupedeck.ClaudeActionRingPlugin.Integration.Tests
                     (VirtualKeyCode.KeyI, ModifierKey.Command | ModifierKey.Shift),
                     (VirtualKeyCode.KeyE, ModifierKey.Command | ModifierKey.Shift),
                     (VirtualKeyCode.Oem1, ModifierKey.Command),
-                    (VirtualKeyCode.KeyD, ModifierKey.Command | ModifierKey.Shift),
+                    (VirtualKeyCode.KeyB, ModifierKey.Command | ModifierKey.Shift),
                     (VirtualKeyCode.Oem102, ModifierKey.Ctrl),
                     (VirtualKeyCode.KeyO, ModifierKey.Ctrl),
                     (VirtualKeyCode.Tab, ModifierKey.Ctrl),
+                    (VirtualKeyCode.Escape, ModifierKey.None),
+                    (VirtualKeyCode.KeyS, ModifierKey.Command | ModifierKey.Shift),
+                    (VirtualKeyCode.KeyN, ModifierKey.Command),
+                    (VirtualKeyCode.Tab, ModifierKey.Ctrl | ModifierKey.Shift),
+                    (VirtualKeyCode.Oem5, ModifierKey.Command),
                 },
                 sent);
         }
 
         [Fact]
-        public void HostDiscoverySurfaceContainsOnlyEightPrimaryCommands()
+        public void HostDiscoverySurfaceContainsOnlyTheCatalogCommands()
         {
             var plugin = new ClaudeActionRingPlugin();
             var provider = Assert.IsAssignableFrom<IPrimaryActionDependencyProvider>(plugin);
@@ -76,7 +81,7 @@ namespace Loupedeck.ClaudeActionRingPlugin.Integration.Tests
 
             var assembly = typeof(ClaudeActionRingPlugin).Assembly;
             Assert.Equal(
-                8,
+                13,
                 assembly.GetTypes().Count(type =>
                     type.IsPublic
                     && type.IsSealed
@@ -169,9 +174,9 @@ namespace Loupedeck.ClaudeActionRingPlugin.Integration.Tests
         public void DesktopLogFormattingContainsOnlyVersionAndAnonymousCategory()
         {
             var text = PluginDesktopBridgeLogSink.Format(
-                new DesktopBridgeLogEntry("0.1.0", "foreground_mismatch"));
+                new DesktopBridgeLogEntry("0.2.0", "foreground_mismatch"));
 
-            Assert.Equal("0.1.0 foreground_mismatch", text);
+            Assert.Equal("0.2.0 foreground_mismatch", text);
             Assert.DoesNotContain("/", text, StringComparison.Ordinal);
             Assert.DoesNotContain("prompt", text, StringComparison.OrdinalIgnoreCase);
             Assert.DoesNotContain("task", text, StringComparison.OrdinalIgnoreCase);

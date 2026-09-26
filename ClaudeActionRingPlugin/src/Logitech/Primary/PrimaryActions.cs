@@ -56,15 +56,15 @@ namespace Loupedeck.ClaudeActionRingPlugin.Logitech.Primary
         }
     }
 
-    public sealed class ToggleDiffCommand : PrimaryActionCommand
+    public sealed class ToggleBrowserCommand : PrimaryActionCommand
     {
-        public ToggleDiffCommand()
-            : base(RingActionId.ToggleDiff)
+        public ToggleBrowserCommand()
+            : base(RingActionId.ToggleBrowser)
         {
         }
 
-        internal ToggleDiffCommand(IActionExecutor executor, IPrimaryFeedbackAdapter feedback)
-            : base(RingActionId.ToggleDiff, executor, feedback)
+        internal ToggleBrowserCommand(IActionExecutor executor, IPrimaryFeedbackAdapter feedback)
+            : base(RingActionId.ToggleBrowser, executor, feedback)
         {
         }
     }
@@ -104,6 +104,71 @@ namespace Loupedeck.ClaudeActionRingPlugin.Logitech.Primary
 
         internal NextSessionCommand(IActionExecutor executor, IPrimaryFeedbackAdapter feedback)
             : base(RingActionId.NextSession, executor, feedback)
+        {
+        }
+    }
+
+    public sealed class StopResponseCommand : PrimaryActionCommand
+    {
+        public StopResponseCommand()
+            : base(RingActionId.StopResponse)
+        {
+        }
+
+        internal StopResponseCommand(IActionExecutor executor, IPrimaryFeedbackAdapter feedback)
+            : base(RingActionId.StopResponse, executor, feedback)
+        {
+        }
+    }
+
+    public sealed class SelectElementCommand : PrimaryActionCommand
+    {
+        public SelectElementCommand()
+            : base(RingActionId.SelectElement)
+        {
+        }
+
+        internal SelectElementCommand(IActionExecutor executor, IPrimaryFeedbackAdapter feedback)
+            : base(RingActionId.SelectElement, executor, feedback)
+        {
+        }
+    }
+
+    public sealed class NewSessionCommand : PrimaryActionCommand
+    {
+        public NewSessionCommand()
+            : base(RingActionId.NewSession)
+        {
+        }
+
+        internal NewSessionCommand(IActionExecutor executor, IPrimaryFeedbackAdapter feedback)
+            : base(RingActionId.NewSession, executor, feedback)
+        {
+        }
+    }
+
+    public sealed class PreviousSessionCommand : PrimaryActionCommand
+    {
+        public PreviousSessionCommand()
+            : base(RingActionId.PreviousSession)
+        {
+        }
+
+        internal PreviousSessionCommand(IActionExecutor executor, IPrimaryFeedbackAdapter feedback)
+            : base(RingActionId.PreviousSession, executor, feedback)
+        {
+        }
+    }
+
+    public sealed class ClosePaneCommand : PrimaryActionCommand
+    {
+        public ClosePaneCommand()
+            : base(RingActionId.ClosePane)
+        {
+        }
+
+        internal ClosePaneCommand(IActionExecutor executor, IPrimaryFeedbackAdapter feedback)
+            : base(RingActionId.ClosePane, executor, feedback)
         {
         }
     }

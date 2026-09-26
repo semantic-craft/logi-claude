@@ -1,0 +1,14 @@
+{
+  "artifact": {
+    "allowlistAudit": "PASS",
+    "byteSize": 48843,
+    "fileCount": 32,
+    "filename": "ClaudeActionRing_0_2_0.lplug4",
+    "officialPackageHashPresent": true,
+    "sha256": "a23656e264b2389ca52a28fecb72d636de92504ae0c7c6a55e660b507f7d86c9"
+  },
+  "identity": "ClaudeActionRing",
+  "officialPack": "OK",
+  "officialVerify": "OK",
+  "version": "0.2.0"
+}

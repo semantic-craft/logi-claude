@@ -23,8 +23,8 @@ namespace Loupedeck.ClaudeActionRingPlugin.Logitech.Primary
                 RingActionId.SideChat,
                 static (executor, feedback) => new SideChatCommand(executor, feedback));
             yield return Case(
-                RingActionId.ToggleDiff,
-                static (executor, feedback) => new ToggleDiffCommand(executor, feedback));
+                RingActionId.ToggleBrowser,
+                static (executor, feedback) => new ToggleBrowserCommand(executor, feedback));
             yield return Case(
                 RingActionId.ToggleTerminal,
                 static (executor, feedback) => new ToggleTerminalCommand(executor, feedback));
@@ -34,6 +34,21 @@ namespace Loupedeck.ClaudeActionRingPlugin.Logitech.Primary
             yield return Case(
                 RingActionId.NextSession,
                 static (executor, feedback) => new NextSessionCommand(executor, feedback));
+            yield return Case(
+                RingActionId.StopResponse,
+                static (executor, feedback) => new StopResponseCommand(executor, feedback));
+            yield return Case(
+                RingActionId.SelectElement,
+                static (executor, feedback) => new SelectElementCommand(executor, feedback));
+            yield return Case(
+                RingActionId.NewSession,
+                static (executor, feedback) => new NewSessionCommand(executor, feedback));
+            yield return Case(
+                RingActionId.PreviousSession,
+                static (executor, feedback) => new PreviousSessionCommand(executor, feedback));
+            yield return Case(
+                RingActionId.ClosePane,
+                static (executor, feedback) => new ClosePaneCommand(executor, feedback));
         }
 
         [Theory]

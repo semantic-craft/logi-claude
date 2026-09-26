@@ -16,10 +16,15 @@ namespace Loupedeck.ClaudeActionRingPlugin.Core.Tests
                 Metadata(RingActionId.ModelMenu, "model_menu", "Model"),
                 Metadata(RingActionId.EffortMenu, "effort_menu", "Effort"),
                 Metadata(RingActionId.SideChat, "side_chat", "Side Chat"),
-                Metadata(RingActionId.ToggleDiff, "toggle_diff", "Toggle Diff"),
+                Metadata(RingActionId.ToggleBrowser, "toggle_browser", "Toggle Browser"),
                 Metadata(RingActionId.ToggleTerminal, "toggle_terminal", "Toggle Terminal"),
                 Metadata(RingActionId.ViewMode, "view_mode", "View Mode"),
                 Metadata(RingActionId.NextSession, "next_session", "Next Session"),
+                Metadata(RingActionId.StopResponse, "stop_response", "Stop Response"),
+                Metadata(RingActionId.SelectElement, "select_element", "Select Element"),
+                Metadata(RingActionId.NewSession, "new_session", "New Session"),
+                Metadata(RingActionId.PreviousSession, "previous_session", "Previous Session"),
+                Metadata(RingActionId.ClosePane, "close_pane", "Close Pane"),
             };
 
             var actual = RingActionCatalog.Definitions.Select(definition =>
@@ -37,10 +42,15 @@ namespace Loupedeck.ClaudeActionRingPlugin.Core.Tests
                 Shortcut(RingActionId.ModelMenu, DesktopModifiers.Command | DesktopModifiers.Shift, DesktopKey.I),
                 Shortcut(RingActionId.EffortMenu, DesktopModifiers.Command | DesktopModifiers.Shift, DesktopKey.E),
                 Shortcut(RingActionId.SideChat, DesktopModifiers.Command, DesktopKey.Semicolon),
-                Shortcut(RingActionId.ToggleDiff, DesktopModifiers.Command | DesktopModifiers.Shift, DesktopKey.D),
+                Shortcut(RingActionId.ToggleBrowser, DesktopModifiers.Command | DesktopModifiers.Shift, DesktopKey.B),
                 Shortcut(RingActionId.ToggleTerminal, DesktopModifiers.Control, DesktopKey.Grave),
                 Shortcut(RingActionId.ViewMode, DesktopModifiers.Control, DesktopKey.O),
                 Shortcut(RingActionId.NextSession, DesktopModifiers.Control, DesktopKey.Tab),
+                Shortcut(RingActionId.StopResponse, DesktopModifiers.None, DesktopKey.Escape),
+                Shortcut(RingActionId.SelectElement, DesktopModifiers.Command | DesktopModifiers.Shift, DesktopKey.S),
+                Shortcut(RingActionId.NewSession, DesktopModifiers.Command, DesktopKey.N),
+                Shortcut(RingActionId.PreviousSession, DesktopModifiers.Control | DesktopModifiers.Shift, DesktopKey.Tab),
+                Shortcut(RingActionId.ClosePane, DesktopModifiers.Command, DesktopKey.Backslash),
             };
 
             foreach (var delivery in expected)
@@ -66,7 +76,7 @@ namespace Loupedeck.ClaudeActionRingPlugin.Core.Tests
                 Assert.Equal(ActionPrecondition.ClaudeFrontmost, definition.Precondition);
             });
             Assert.Equal(
-                8,
+                13,
                 RingActionCatalog.Definitions
                     .Select(definition => ((RingActionDelivery.Desktop)definition.Delivery).Shortcut)
                     .Distinct()
@@ -74,18 +84,18 @@ namespace Loupedeck.ClaudeActionRingPlugin.Core.Tests
         }
 
         [Fact]
-        public void CatalogHasExactlyEightUniqueIdsAndIconKeys()
+        public void CatalogHasExactlyThirteenUniqueIdsAndIconKeys()
         {
-            Assert.Equal(8, RingActionCatalog.Definitions.Count);
-            Assert.Equal(8, Enum.GetValues<RingActionId>().Length);
-            Assert.Equal(8, RingActionCatalog.Definitions.Select(definition => definition.Id).Distinct().Count());
-            Assert.Equal(8, RingActionCatalog.Definitions.Select(definition => definition.StableId).Distinct(StringComparer.Ordinal).Count());
-            Assert.Equal(8, RingActionCatalog.Definitions.Select(definition => definition.IconKey).Distinct(StringComparer.Ordinal).Count());
+            Assert.Equal(13, RingActionCatalog.Definitions.Count);
+            Assert.Equal(13, Enum.GetValues<RingActionId>().Length);
+            Assert.Equal(13, RingActionCatalog.Definitions.Select(definition => definition.Id).Distinct().Count());
+            Assert.Equal(13, RingActionCatalog.Definitions.Select(definition => definition.StableId).Distinct(StringComparer.Ordinal).Count());
+            Assert.Equal(13, RingActionCatalog.Definitions.Select(definition => definition.IconKey).Distinct(StringComparer.Ordinal).Count());
             Assert.All(RingActionCatalog.Definitions, definition => Assert.Equal(definition.StableId, definition.IconKey));
         }
 
         [Fact]
-        public void PrimaryOrderIsFixedClockwiseFromTheTop()
+        public void PrimaryOrderListsTheDefaultRingBeforeTheOptionalActions()
         {
             Assert.Equal(
                 new[]
@@ -94,10 +104,15 @@ namespace Loupedeck.ClaudeActionRingPlugin.Core.Tests
                     RingActionId.ModelMenu,
                     RingActionId.EffortMenu,
                     RingActionId.SideChat,
-                    RingActionId.ToggleDiff,
+                    RingActionId.ToggleBrowser,
                     RingActionId.ToggleTerminal,
                     RingActionId.ViewMode,
                     RingActionId.NextSession,
+                    RingActionId.StopResponse,
+                    RingActionId.SelectElement,
+                    RingActionId.NewSession,
+                    RingActionId.PreviousSession,
+                    RingActionId.ClosePane,
                 },
                 RingActionCatalog.PrimaryOrder);
         }

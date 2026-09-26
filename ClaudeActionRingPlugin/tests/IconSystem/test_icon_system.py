@@ -42,7 +42,7 @@ def child_geometry(root: ET.Element) -> tuple[bytes, ...]:
 
 
 class IconMasterContracts(unittest.TestCase):
-    def test_exactly_eight_semantic_masters_exist(self) -> None:
+    def test_exactly_the_catalog_semantic_masters_exist(self) -> None:
         self.assertEqual(file_names(MASTER_ROOT), EXPECTED_KEYS)
 
     def test_masters_are_current_color_64_square_monoline_svg(self) -> None:
@@ -223,7 +223,9 @@ class RasterAndReviewContracts(unittest.TestCase):
                     self.assertEqual(image.size, size)
                 if name.startswith("ring-"):
                     self.assertIn("82 px slot / 54 px glyph", svg_text)
-                    self.assertEqual(svg_text.count('r="41"'), 16)
+                    self.assertEqual(
+                        svg_text.count('r="41"'), 2 * len(GENERATOR.ACTION_KEYS)
+                    )
                 elif name == "picker":
                     self.assertIn("46 px glyph", svg_text)
 

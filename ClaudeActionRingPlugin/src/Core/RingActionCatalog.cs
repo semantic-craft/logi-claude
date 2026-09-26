@@ -25,10 +25,15 @@ namespace Loupedeck.ClaudeActionRingPlugin.Core
                 Shortcut(RingActionId.ModelMenu, "model_menu", "Model", Command | Shift, DesktopKey.I),
                 Shortcut(RingActionId.EffortMenu, "effort_menu", "Effort", Command | Shift, DesktopKey.E),
                 Shortcut(RingActionId.SideChat, "side_chat", "Side Chat", Command, DesktopKey.Semicolon),
-                Shortcut(RingActionId.ToggleDiff, "toggle_diff", "Toggle Diff", Command | Shift, DesktopKey.D),
+                Shortcut(RingActionId.ToggleBrowser, "toggle_browser", "Toggle Browser", Command | Shift, DesktopKey.B),
                 Shortcut(RingActionId.ToggleTerminal, "toggle_terminal", "Toggle Terminal", Control, DesktopKey.Grave),
                 Shortcut(RingActionId.ViewMode, "view_mode", "View Mode", Control, DesktopKey.O),
                 Shortcut(RingActionId.NextSession, "next_session", "Next Session", Control, DesktopKey.Tab),
+                Shortcut(RingActionId.StopResponse, "stop_response", "Stop Response", DesktopModifiers.None, DesktopKey.Escape),
+                Shortcut(RingActionId.SelectElement, "select_element", "Select Element", Command | Shift, DesktopKey.S),
+                Shortcut(RingActionId.NewSession, "new_session", "New Session", Command, DesktopKey.N),
+                Shortcut(RingActionId.PreviousSession, "previous_session", "Previous Session", Control | Shift, DesktopKey.Tab),
+                Shortcut(RingActionId.ClosePane, "close_pane", "Close Pane", Command, DesktopKey.Backslash),
             });
 
         private static readonly IReadOnlyDictionary<RingActionId, RingActionDefinition> _byId =
@@ -40,10 +45,15 @@ namespace Loupedeck.ClaudeActionRingPlugin.Core
             RingActionId.ModelMenu,
             RingActionId.EffortMenu,
             RingActionId.SideChat,
-            RingActionId.ToggleDiff,
+            RingActionId.ToggleBrowser,
             RingActionId.ToggleTerminal,
             RingActionId.ViewMode,
             RingActionId.NextSession,
+            RingActionId.StopResponse,
+            RingActionId.SelectElement,
+            RingActionId.NewSession,
+            RingActionId.PreviousSession,
+            RingActionId.ClosePane,
         });
 
         internal static IReadOnlyList<RingActionDefinition> Definitions => RingActionCatalog._definitions;

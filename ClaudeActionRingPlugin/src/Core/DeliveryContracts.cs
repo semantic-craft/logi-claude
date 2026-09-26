@@ -20,10 +20,14 @@ namespace Loupedeck.ClaudeActionRingPlugin.Core
         I,
         E,
         Semicolon,
-        D,
+        B,
         Grave,
         O,
         Tab,
+        Escape,
+        S,
+        N,
+        Backslash,
     }
 
     internal readonly record struct KeyboardShortcut(DesktopModifiers Modifiers, DesktopKey Key);

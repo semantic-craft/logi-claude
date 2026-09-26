@@ -1,9 +1,9 @@
 {
-  "actionIconCount": 8,
-  "actionSymbolCount": 8,
+  "actionIconCount": 13,
+  "actionSymbolCount": 13,
   "eventMappingSha256": "93a5116a3678b49d7c439bbfeea2407485f9161896c770283201168b785f3d4d",
   "eventSourceSha256": "5332a12efdc2a630c1c6cd585fb141366b75a5f5476d6a08dd47744963baf973",
-  "mappingCount": 8,
+  "mappingCount": 13,
   "mappings": [
     {
       "actionClass": "Loupedeck.ClaudeActionRingPlugin.Logitech.Primary.PermissionModeCommand",
@@ -38,12 +38,12 @@
       "semanticKey": "side_chat"
     },
     {
-      "actionClass": "Loupedeck.ClaudeActionRingPlugin.Logitech.Primary.ToggleDiffCommand",
-      "packageFilename": "Loupedeck.ClaudeActionRingPlugin.Logitech.Primary.ToggleDiffCommand.svg",
+      "actionClass": "Loupedeck.ClaudeActionRingPlugin.Logitech.Primary.ToggleBrowserCommand",
+      "packageFilename": "Loupedeck.ClaudeActionRingPlugin.Logitech.Primary.ToggleBrowserCommand.svg",
       "parameter": null,
-      "pickerSha256": "a96d87d3504cba7abde75ad291991f53f1b2cd559dcf81977f05f33583ecc297",
-      "ringSha256": "4055d5d6c55bd65defbdf7e389a66bb1fd827296d657607fe8c26b39fb310099",
-      "semanticKey": "toggle_diff"
+      "pickerSha256": "247c6f3c7580d2fbc697b18969c22be29254a9d1357511e34fa1a8b48663830f",
+      "ringSha256": "0e281d0334c50ad9db1445bbb7d16967f7e42b5fed4553ec95a9000c0a9b46cc",
+      "semanticKey": "toggle_browser"
     },
     {
       "actionClass": "Loupedeck.ClaudeActionRingPlugin.Logitech.Primary.ToggleTerminalCommand",
@@ -68,6 +68,46 @@
       "pickerSha256": "4134379e07710fb5a24f89feadd32b5b3bc446804b8670abf6ba951affd6f830",
       "ringSha256": "25f98732f07f063f086ff802c2874c9082e588862815896a2c303cbc02d90d17",
       "semanticKey": "next_session"
+    },
+    {
+      "actionClass": "Loupedeck.ClaudeActionRingPlugin.Logitech.Primary.StopResponseCommand",
+      "packageFilename": "Loupedeck.ClaudeActionRingPlugin.Logitech.Primary.StopResponseCommand.svg",
+      "parameter": null,
+      "pickerSha256": "95d196efc47566836d9c60ebad314f6a7a231bee256c0a433c1b1f1e17abe9b4",
+      "ringSha256": "296d085846ad563755806f463806698915ba003d9dbc2f10d1432c20785f4cf5",
+      "semanticKey": "stop_response"
+    },
+    {
+      "actionClass": "Loupedeck.ClaudeActionRingPlugin.Logitech.Primary.SelectElementCommand",
+      "packageFilename": "Loupedeck.ClaudeActionRingPlugin.Logitech.Primary.SelectElementCommand.svg",
+      "parameter": null,
+      "pickerSha256": "d8568de3f09687ee293abb6c22ce44cbbcf3577fcd6ec9206c559caaacc6cbb6",
+      "ringSha256": "427b870359fe55d6fbeb60b576bc7ca6383dfc9f257a588a5ca2d82e59464572",
+      "semanticKey": "select_element"
+    },
+    {
+      "actionClass": "Loupedeck.ClaudeActionRingPlugin.Logitech.Primary.NewSessionCommand",
+      "packageFilename": "Loupedeck.ClaudeActionRingPlugin.Logitech.Primary.NewSessionCommand.svg",
+      "parameter": null,
+      "pickerSha256": "025bf74e4baba880b4416a5c4828a3923d6fa2e919076b5f13bc409143606b0f",
+      "ringSha256": "c032cccbc955c68eb78fade389749f63d040ba447609cc7bac2666f56b4f160f",
+      "semanticKey": "new_session"
+    },
+    {
+      "actionClass": "Loupedeck.ClaudeActionRingPlugin.Logitech.Primary.PreviousSessionCommand",
+      "packageFilename": "Loupedeck.ClaudeActionRingPlugin.Logitech.Primary.PreviousSessionCommand.svg",
+      "parameter": null,
+      "pickerSha256": "0b866c56703755b97bd7d112b5586905bfc7eeb27c5ec61f36092878d36702bd",
+      "ringSha256": "53741dd25f9abfd3e4828ab121c56f549dc2835275d854d75b30b763a97a206d",
+      "semanticKey": "previous_session"
+    },
+    {
+      "actionClass": "Loupedeck.ClaudeActionRingPlugin.Logitech.Primary.ClosePaneCommand",
+      "packageFilename": "Loupedeck.ClaudeActionRingPlugin.Logitech.Primary.ClosePaneCommand.svg",
+      "parameter": null,
+      "pickerSha256": "3358fa2f9923bc0265e024544e3d24d76d034951ae6db10aea04543498cbdeae",
+      "ringSha256": "aead3867861dee25b3e3e1dc12c9855444d57e7a05f5d931704b2e673207a847",
+      "semanticKey": "close_pane"
     }
   ],
   "pluginIconSha256": "7b61b081366e8b62f58b505944986f4d6087aae4dd1c24bf236cb69786cdf4fd"

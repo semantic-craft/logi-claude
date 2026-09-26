@@ -9,7 +9,7 @@ namespace Loupedeck.ClaudeActionRingPlugin.Composition
 
     internal sealed class ActionRingComposition : IPrimaryActionDependencyProvider
     {
-        internal const String PluginVersion = "0.1.0";
+        internal const String PluginVersion = "0.2.0";
 
         private readonly FeedbackCoordinator _feedback;
         private readonly HapticFeedbackAdapter _haptics;

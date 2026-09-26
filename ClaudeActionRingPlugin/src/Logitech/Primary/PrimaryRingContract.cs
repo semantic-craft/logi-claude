@@ -23,10 +23,15 @@ namespace Loupedeck.ClaudeActionRingPlugin.Logitech.Primary
                 [RingActionId.ModelMenu] = typeof(ModelMenuCommand),
                 [RingActionId.EffortMenu] = typeof(EffortMenuCommand),
                 [RingActionId.SideChat] = typeof(SideChatCommand),
-                [RingActionId.ToggleDiff] = typeof(ToggleDiffCommand),
+                [RingActionId.ToggleBrowser] = typeof(ToggleBrowserCommand),
                 [RingActionId.ToggleTerminal] = typeof(ToggleTerminalCommand),
                 [RingActionId.ViewMode] = typeof(ViewModeCommand),
                 [RingActionId.NextSession] = typeof(NextSessionCommand),
+                [RingActionId.StopResponse] = typeof(StopResponseCommand),
+                [RingActionId.SelectElement] = typeof(SelectElementCommand),
+                [RingActionId.NewSession] = typeof(NewSessionCommand),
+                [RingActionId.PreviousSession] = typeof(PreviousSessionCommand),
+                [RingActionId.ClosePane] = typeof(ClosePaneCommand),
             };
 
         private static readonly IReadOnlyList<PrimaryRingEntry> _entries = BuildEntries();

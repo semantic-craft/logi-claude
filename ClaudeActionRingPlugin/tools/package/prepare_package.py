@@ -22,10 +22,15 @@ MAPPINGS = (
     ("model_menu", f"{PRIMARY_NAMESPACE}.ModelMenuCommand", None),
     ("effort_menu", f"{PRIMARY_NAMESPACE}.EffortMenuCommand", None),
     ("side_chat", f"{PRIMARY_NAMESPACE}.SideChatCommand", None),
-    ("toggle_diff", f"{PRIMARY_NAMESPACE}.ToggleDiffCommand", None),
+    ("toggle_browser", f"{PRIMARY_NAMESPACE}.ToggleBrowserCommand", None),
     ("toggle_terminal", f"{PRIMARY_NAMESPACE}.ToggleTerminalCommand", None),
     ("view_mode", f"{PRIMARY_NAMESPACE}.ViewModeCommand", None),
     ("next_session", f"{PRIMARY_NAMESPACE}.NextSessionCommand", None),
+    ("stop_response", f"{PRIMARY_NAMESPACE}.StopResponseCommand", None),
+    ("select_element", f"{PRIMARY_NAMESPACE}.SelectElementCommand", None),
+    ("new_session", f"{PRIMARY_NAMESPACE}.NewSessionCommand", None),
+    ("previous_session", f"{PRIMARY_NAMESPACE}.PreviousSessionCommand", None),
+    ("close_pane", f"{PRIMARY_NAMESPACE}.ClosePaneCommand", None),
 )
 
 
@@ -45,14 +50,19 @@ def validate_contract() -> None:
         "model_menu",
         "effort_menu",
         "side_chat",
-        "toggle_diff",
+        "toggle_browser",
         "toggle_terminal",
         "view_mode",
         "next_session",
+        "stop_response",
+        "select_element",
+        "new_session",
+        "previous_session",
+        "close_pane",
     }
-    if len(semantic_keys) != 8 or set(semantic_keys) != expected_keys:
+    if len(semantic_keys) != len(expected_keys) or set(semantic_keys) != expected_keys:
         raise SystemExit(
-            "action mapping must contain exactly the eight product actions"
+            "action mapping must contain exactly the catalog product actions"
         )
 
     primary_source = (
@@ -79,7 +89,7 @@ def validate_contract() -> None:
         "name: ClaudeActionRing",
         "displayName: Claude Action Ring",
         "pluginFileName: ClaudeActionRingPlugin.dll",
-        "version: 0.1.0",
+        "version: 0.2.0",
         "pluginFolderMac: bin",
         "    - LoupedeckExtendedFamily",
         "    - HasApplication",
@@ -163,7 +173,7 @@ def check_projected() -> dict[str, object]:
         actual_names = {path.name for path in directory.glob("*.svg")}
         if actual_names != expected_names:
             raise SystemExit(
-                f"{directory_name} class-name set does not match the eight-action contract"
+                f"{directory_name} class-name set does not match the catalog action contract"
             )
         for semantic_key, action_class, parameter in MAPPINGS:
             source = ICON_ROOT.joinpath(*source_parts, f"{semantic_key}.svg")
@@ -208,9 +218,9 @@ def check_projected() -> dict[str, object]:
         raise SystemExit("every haptic event must have one DEFAULT mapping")
 
     return {
-        "mappingCount": 8,
-        "actionIconCount": 8,
-        "actionSymbolCount": 8,
+        "mappingCount": len(MAPPINGS),
+        "actionIconCount": len(MAPPINGS),
+        "actionSymbolCount": len(MAPPINGS),
         "hapticEvents": sorted(expected_events),
     }
 

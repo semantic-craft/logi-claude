@@ -16,8 +16,8 @@ from typing import Iterable, Sequence
 
 PLUGIN_ROOT = Path(__file__).resolve().parents[2]
 PROJECT_ROOT = PLUGIN_ROOT.parent
-ARTIFACT = PLUGIN_ROOT / "artifacts" / "ClaudeActionRing_0_1_0.lplug4"
-PACKAGE_REPORT = PLUGIN_ROOT / "artifacts" / "ClaudeActionRing_0_1_0.report.json"
+ARTIFACT = PLUGIN_ROOT / "artifacts" / "ClaudeActionRing_0_2_0.lplug4"
+PACKAGE_REPORT = PLUGIN_ROOT / "artifacts" / "ClaudeActionRing_0_2_0.report.json"
 PACKAGE_ROOT = PLUGIN_ROOT / "src" / "package"
 ACTION_MAP = PLUGIN_ROOT / "tools" / "package" / "action-map.json"
 PASS = "PASS"
@@ -28,12 +28,18 @@ PRIMARY_ORDER = (
     "ModelMenu",
     "EffortMenu",
     "SideChat",
-    "ToggleDiff",
+    "ToggleBrowser",
     "ToggleTerminal",
     "ViewMode",
     "NextSession",
+    "StopResponse",
+    "SelectElement",
+    "NewSession",
+    "PreviousSession",
+    "ClosePane",
 )
 ACTION_IDS = PRIMARY_ORDER
+ACTION_COUNT = len(ACTION_IDS)
 DISPATCH_RESULTS = (
     "NotDispatched",
     "DispatchRequested",
@@ -45,10 +51,15 @@ ACTION_FRAGMENTS = (
     'Shortcut(RingActionId.ModelMenu, "model_menu", "Model", Command | Shift, DesktopKey.I)',
     'Shortcut(RingActionId.EffortMenu, "effort_menu", "Effort", Command | Shift, DesktopKey.E)',
     'Shortcut(RingActionId.SideChat, "side_chat", "Side Chat", Command, DesktopKey.Semicolon)',
-    'Shortcut(RingActionId.ToggleDiff, "toggle_diff", "Toggle Diff", Command | Shift, DesktopKey.D)',
+    'Shortcut(RingActionId.ToggleBrowser, "toggle_browser", "Toggle Browser", Command | Shift, DesktopKey.B)',
     'Shortcut(RingActionId.ToggleTerminal, "toggle_terminal", "Toggle Terminal", Control, DesktopKey.Grave)',
     'Shortcut(RingActionId.ViewMode, "view_mode", "View Mode", Control, DesktopKey.O)',
     'Shortcut(RingActionId.NextSession, "next_session", "Next Session", Control, DesktopKey.Tab)',
+    'Shortcut(RingActionId.StopResponse, "stop_response", "Stop Response", DesktopModifiers.None, DesktopKey.Escape)',
+    'Shortcut(RingActionId.SelectElement, "select_element", "Select Element", Command | Shift, DesktopKey.S)',
+    'Shortcut(RingActionId.NewSession, "new_session", "New Session", Command, DesktopKey.N)',
+    'Shortcut(RingActionId.PreviousSession, "previous_session", "Previous Session", Control | Shift, DesktopKey.Tab)',
+    'Shortcut(RingActionId.ClosePane, "close_pane", "Close Pane", Command, DesktopKey.Backslash)',
 )
 EXPECTED_HAPTICS = {"DispatchRequested", "DispatchFailed", "SelectionRejected"}
 
@@ -159,10 +170,10 @@ def check_catalog() -> dict[str, object]:
         != ACTION_IDS
     ):
         raise ContractError(
-            "RingActionId must contain exactly the eight product IDs in order"
+            "RingActionId must contain exactly the catalog product IDs in order"
         )
-    if len(re.findall(r"\bShortcut\(RingActionId\.", source)) != 8:
-        raise ContractError("Catalog must define exactly eight actions")
+    if len(re.findall(r"\bShortcut\(RingActionId\.", source)) != ACTION_COUNT:
+        raise ContractError(f"Catalog must define exactly {ACTION_COUNT} actions")
     missing = [fragment for fragment in ACTION_FRAGMENTS if fragment not in compact]
     if missing:
         raise ContractError(f"Catalog mapping mismatch: {missing[0]}")
@@ -178,10 +189,10 @@ def check_catalog() -> dict[str, object]:
             "DispatchResult must contain exactly the locked four states"
         )
     return {
-        "actionCount": 8,
+        "actionCount": ACTION_COUNT,
         "primaryOrder": list(PRIMARY_ORDER),
         "dispatchResults": list(DISPATCH_RESULTS),
-        "deliveryCount": {"shortcut": 8},
+        "deliveryCount": {"shortcut": ACTION_COUNT},
     }
 
 
@@ -286,7 +297,7 @@ def check_feedback_icons_haptics() -> dict[str, object]:
     }
     expected_keys = {entry.split('"')[1] for entry in ACTION_FRAGMENTS}
     if master_names != expected_keys:
-        raise ContractError("icon masters must match exactly the eight stable IDs")
+        raise ContractError("icon masters must match exactly the catalog stable IDs")
     generated_dirs = (
         PLUGIN_ROOT / "assets" / "icons" / "generated" / "ring" / "normal",
         PLUGIN_ROOT / "assets" / "icons" / "generated" / "ring" / "unavailable",
@@ -299,10 +310,10 @@ def check_feedback_icons_haptics() -> dict[str, object]:
     action_map = json.loads(ACTION_MAP.read_text())
     mappings = action_map.get("mappings", [])
     if (
-        len(mappings) != 8
+        len(mappings) != ACTION_COUNT
         or {entry["semanticKey"] for entry in mappings} != expected_keys
     ):
-        raise ContractError("package action map must contain the eight stable IDs")
+        raise ContractError("package action map must contain the catalog stable IDs")
     for entry in mappings:
         key = entry["semanticKey"]
         filename = entry["packageFilename"]
@@ -375,9 +386,9 @@ def check_feedback_icons_haptics() -> dict[str, object]:
         )
 
     return {
-        "masterCount": 8,
-        "ringIconCount": 8,
-        "pickerSymbolCount": 8,
+        "masterCount": ACTION_COUNT,
+        "ringIconCount": ACTION_COUNT,
+        "pickerSymbolCount": ACTION_COUNT,
         "pluginIcon": {"width": 256, "height": 256},
         "hapticEvents": sorted(EXPECTED_HAPTICS),
         "feedbackStates": list(DISPATCH_RESULTS),
@@ -387,8 +398,8 @@ def check_feedback_icons_haptics() -> dict[str, object]:
 def _expected_package_paths() -> set[str]:
     action_map = json.loads(ACTION_MAP.read_text())
     names = {entry["packageFilename"] for entry in action_map.get("mappings", [])}
-    if len(names) != 8:
-        raise ContractError("package action map must provide eight unique filenames")
+    if len(names) != ACTION_COUNT:
+        raise ContractError("package action map must provide one unique filename per action")
     return {
         "bin/ClaudeActionRingPlugin.dll",
         "metadata/LoupedeckPackage.yaml",
@@ -426,7 +437,7 @@ def privacy_categories(payload: bytes) -> list[str]:
 
 def check_package() -> dict[str, object]:
     if not ARTIFACT.is_file() or not PACKAGE_REPORT.is_file():
-        raise ContractError("exact eight-action artifact/report is missing")
+        raise ContractError("exact catalog-action artifact/report is missing")
     expected = _expected_package_paths()
     source_expected = expected - {"bin/ClaudeActionRingPlugin.dll"}
     source_actual = {
@@ -446,7 +457,7 @@ def check_package() -> dict[str, object]:
         "name: ClaudeActionRing",
         "displayName: Claude Action Ring",
         "pluginFileName: ClaudeActionRingPlugin.dll",
-        "version: 0.1.0",
+        "version: 0.2.0",
         "pluginFolderMac: bin",
         "    - LoupedeckExtendedFamily",
         "    - HasApplication",
@@ -500,7 +511,7 @@ def check_package() -> dict[str, object]:
     artifact_report = report.get("artifact", {})
     artifact_size = ARTIFACT.stat().st_size
     artifact_sha = sha256(ARTIFACT)
-    if report.get("identity") != "ClaudeActionRing" or report.get("version") != "0.1.0":
+    if report.get("identity") != "ClaudeActionRing" or report.get("version") != "0.2.0":
         raise ContractError("release report identity/version mismatch")
     if report.get("officialPack") != "OK" or report.get("officialVerify") != "OK":
         raise ContractError("I09 pack/verify report is not OK")
@@ -524,7 +535,7 @@ def check_package() -> dict[str, object]:
         "manifest": {
             "identity": "ClaudeActionRing",
             "displayName": "Claude Action Ring",
-            "version": "0.1.0",
+            "version": "0.2.0",
             "device": "LoupedeckExtendedFamily",
             "capabilities": ["HasApplication", "HasHapticMapping"],
         },

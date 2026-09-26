@@ -6,9 +6,14 @@ namespace Loupedeck.ClaudeActionRingPlugin.Core
         ModelMenu,
         EffortMenu,
         SideChat,
-        ToggleDiff,
+        ToggleBrowser,
         ToggleTerminal,
         ViewMode,
         NextSession,
+        StopResponse,
+        SelectElement,
+        NewSession,
+        PreviousSession,
+        ClosePane,
     }
 }
