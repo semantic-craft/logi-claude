@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Deterministic, read-only contract checks for the Claude Action Ring package."""
+"""Deterministic, read-only contract checks for the Claude Shortcut package."""
 
 from __future__ import annotations
 
@@ -16,8 +16,8 @@ from typing import Iterable, Sequence
 
 PLUGIN_ROOT = Path(__file__).resolve().parents[2]
 PROJECT_ROOT = PLUGIN_ROOT.parent
-ARTIFACT = PLUGIN_ROOT / "artifacts" / "ClaudeActionRing_0_2_0.lplug4"
-PACKAGE_REPORT = PLUGIN_ROOT / "artifacts" / "ClaudeActionRing_0_2_0.report.json"
+ARTIFACT = PLUGIN_ROOT / "artifacts" / "ClaudeActionRing_0_2_1.lplug4"
+PACKAGE_REPORT = PLUGIN_ROOT / "artifacts" / "ClaudeActionRing_0_2_1.report.json"
 PACKAGE_ROOT = PLUGIN_ROOT / "src" / "package"
 ACTION_MAP = PLUGIN_ROOT / "tools" / "package" / "action-map.json"
 PASS = "PASS"
@@ -455,9 +455,9 @@ def check_package() -> dict[str, object]:
     required_manifest = (
         "type: plugin4",
         "name: ClaudeActionRing",
-        "displayName: Claude Action Ring",
+        "displayName: Claude Shortcut",
         "pluginFileName: ClaudeActionRingPlugin.dll",
-        "version: 0.2.0",
+        "version: 0.2.1",
         "pluginFolderMac: bin",
         "    - LoupedeckExtendedFamily",
         "    - HasApplication",
@@ -511,7 +511,7 @@ def check_package() -> dict[str, object]:
     artifact_report = report.get("artifact", {})
     artifact_size = ARTIFACT.stat().st_size
     artifact_sha = sha256(ARTIFACT)
-    if report.get("identity") != "ClaudeActionRing" or report.get("version") != "0.2.0":
+    if report.get("identity") != "ClaudeActionRing" or report.get("version") != "0.2.1":
         raise ContractError("release report identity/version mismatch")
     if report.get("officialPack") != "OK" or report.get("officialVerify") != "OK":
         raise ContractError("I09 pack/verify report is not OK")
@@ -534,8 +534,8 @@ def check_package() -> dict[str, object]:
         "packageSourceFileCount": len(source_actual),
         "manifest": {
             "identity": "ClaudeActionRing",
-            "displayName": "Claude Action Ring",
-            "version": "0.2.0",
+            "displayName": "Claude Shortcut",
+            "version": "0.2.1",
             "device": "LoupedeckExtendedFamily",
             "capabilities": ["HasApplication", "HasHapticMapping"],
         },

@@ -9,16 +9,16 @@ type: plugin4
 name: ClaudeActionRing
 
 # Plugin name that is shown to the user.
-displayName: Claude Action Ring
+displayName: Claude Shortcut
 
 # Short description of the plugin.
-description: Actions Ring commands for the Claude Desktop Code tab on macOS.
+description: Keyboard shortcuts for the Claude Desktop Code tab on macOS.
 
 # Name of the plugin library file.
 pluginFileName: ClaudeActionRingPlugin.dll
 
 # Plugin version.
-version: 0.2.0
+version: 0.2.1
 
 # Author of the plugin. The author can be a company or an individual developer.
 author: xianwei zhang

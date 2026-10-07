@@ -7,7 +7,7 @@ namespace Loupedeck.ClaudeActionRingPlugin.Logitech.Primary
 
     public abstract class PrimaryActionCommand : PluginDynamicCommand
     {
-        private const String DefaultGroupName = "Claude Action Ring";
+        private const String DefaultGroupName = "Claude Shortcut";
 
         private readonly RingActionId _actionId;
         private readonly PrimaryActionServices? _injectedServices;
@@ -15,7 +15,7 @@ namespace Loupedeck.ClaudeActionRingPlugin.Logitech.Primary
         protected PrimaryActionCommand(RingActionId actionId)
             : base(
                 PrimaryRingContract.GetDefinition(actionId).Label,
-                $"Requests {PrimaryRingContract.GetDefinition(actionId).Label} through Claude Action Ring",
+                $"Requests {PrimaryRingContract.GetDefinition(actionId).Label} through Claude Shortcut",
                 PrimaryActionCommand.DefaultGroupName,
                 DeviceType.LoupedeckExtendedFamily)
         {

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate deterministic Claude Action Ring icon projections and review sheets."""
+"""Generate deterministic Claude Shortcut icon projections and review sheets."""
 
 from __future__ import annotations
 

@@ -1,5 +1,5 @@
-displayName: Claude Action Ring
-description: Honest local-delivery feedback for Claude Action Ring
+displayName: Claude Shortcut
+description: Honest local-delivery feedback for Claude Shortcut
 events:
   - name: DispatchRequested
     displayName: Dispatch Requested

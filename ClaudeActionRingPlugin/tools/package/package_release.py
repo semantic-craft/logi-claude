@@ -17,8 +17,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 PACKAGE = ROOT / "src" / "package"
 ARTIFACTS = ROOT / "artifacts"
-ARTIFACT = ARTIFACTS / "ClaudeActionRing_0_2_0.lplug4"
-REPORT = ARTIFACTS / "ClaudeActionRing_0_2_0.report.json"
+ARTIFACT = ARTIFACTS / "ClaudeActionRing_0_2_1.lplug4"
+REPORT = ARTIFACTS / "ClaudeActionRing_0_2_1.report.json"
 ACTION_CLASS_PREFIX = "Loupedeck.ClaudeActionRingPlugin."
 
 
@@ -151,7 +151,7 @@ def main() -> None:
     artifact_report = audit_artifact(expected)
     report = {
         "identity": "ClaudeActionRing",
-        "version": "0.2.0",
+        "version": "0.2.1",
         "artifact": artifact_report,
         "officialPack": "OK",
         "officialVerify": "OK",

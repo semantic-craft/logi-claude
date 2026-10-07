@@ -1,6 +1,6 @@
-# Claude Action Ring
+# Claude Shortcut
 
-<img src="ClaudeActionRingPlugin/assets/icons/generated/plugin/Icon256x256.png" width="96" alt="Claude Action Ring icon">
+<img src="ClaudeActionRingPlugin/assets/icons/generated/plugin/Icon256x256.png" width="96" alt="Claude Shortcut icon">
 
 Thirteen Claude Desktop Code-tab actions for the Logitech MX Master 4 for Mac Actions Ring: eight for the default ring, five optional swaps.
 Developed by **xianwei zhang**. Independent integration; not built, endorsed or supported by Anthropic or Logitech.
@@ -9,8 +9,10 @@ Developed by **xianwei zhang**. Independent integration; not built, endorsed or 
 
 Requires macOS, Claude Desktop (Code tab), Logi Options+ with plugin support, and MX Master 4 for Mac.
 
-1. Download [ClaudeActionRing_0_2_0.lplug4](ClaudeActionRingPlugin/artifacts/ClaudeActionRing_0_2_0.lplug4) using GitHub's download button and open it to install.
-2. In Options+, select Claude Action Ring and assign any eight actions to the eight ring slots.
+The 0.2.1 rename candidate below is for local review and has not been published. The published [0.2.0 package](ClaudeActionRingPlugin/artifacts/ClaudeActionRing_0_2_0.lplug4) retains its original display name, Claude Action Ring.
+
+1. To install the local candidate when ready, open [ClaudeActionRing_0_2_1.lplug4](ClaudeActionRingPlugin/artifacts/ClaudeActionRing_0_2_1.lplug4).
+2. In Options+, select Claude Shortcut and assign any eight actions to the eight ring slots.
 3. Keep Claude Desktop frontmost with the Code tab active. The actions send Claude's own documented Code-tab shortcuts, so they do nothing useful on the Chat or Cowork tabs.
 
 | Action | Delivery | Default ring |
@@ -42,7 +44,7 @@ python3 -m unittest discover -s ClaudeActionRingPlugin/tests/IconSystem -v
 ```
 
 Run each .NET test project under `ClaudeActionRingPlugin/tests/` with `dotnet test <project.csproj>`.
-See [icons](ClaudeActionRingPlugin/tools/icons/README.md), [packaging](ClaudeActionRingPlugin/tools/package/README.md) and [validation](ClaudeActionRingPlugin/tools/validate/README.md) for the icon pipeline and the official LogiPluginTool workflow. Release versions are immutable; choose a new version when preparing a new package. The checked-in 0.2.0 package is the exact artifact produced by `package_release.py` from a Release build with `-p:DebugType=None -p:DebugSymbols=false` and verified by LogiPluginTool 6.1.4.22672; 0.1.0 is kept as the previous release.
+See [icons](ClaudeActionRingPlugin/tools/icons/README.md), [packaging](ClaudeActionRingPlugin/tools/package/README.md) and [validation](ClaudeActionRingPlugin/tools/validate/README.md) for the icon pipeline and the official LogiPluginTool workflow. Release versions are immutable; choose a new version when preparing a new package. The local 0.2.1 candidate is the exact artifact produced by `package_release.py` from a Release build with `-p:DebugType=None -p:DebugSymbols=false` and verified by LogiPluginTool 6.1.4.22672; published 0.1.0 and 0.2.0 artifacts are preserved unchanged. The internal package identity (`ClaudeActionRing`), assembly and all thirteen action IDs remain unchanged so existing assignments keep their targets.
 
 ## Privacy and support
 
